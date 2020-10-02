@@ -13,7 +13,7 @@
             </div>
 
             <div class="socialMediaIcon">
-                <a href="https://www.linkedin.com/in/pranav03/">
+                <a href="https://www.instagram.com/pranavdesigner/?hl=en">
                 <img src="<?php echo base_url('/assets/images/social_icons') . '/instagram.svg' ; ?>" alt="" class="socialMediaImg"/>
                 </a>
             </div>
