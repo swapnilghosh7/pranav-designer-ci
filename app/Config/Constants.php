@@ -107,6 +107,6 @@ if(EN == 'staging'){
     defined('BASE') || define('BASE',$protocol);
 }
 if(EN == 'developement'){
-    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'] . '/pranav-designer-ci' : 'http://'.$_SERVER['HTTP_HOST'] . '/pranav-designer-ci';
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'] . '/pranav-designer-ci/public' : 'http://'.$_SERVER['HTTP_HOST'] . '/pranav-designer-ci/public';
     defined('BASE') || define('BASE',$protocol);
 }
