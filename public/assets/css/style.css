@@ -16,6 +16,13 @@ body{
 }
 
 /* Header Styling */
+header{
+  transform:translate(0,-100%);
+  animation-name: headerAnim;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  /* animation-direction: forwards; */
+}
 .headerWrapper{
   display: flex;
   justify-content: space-between;
@@ -101,3 +108,12 @@ footer{
 }
 
 /* Header Styling End */
+
+@keyframes headerAnim{
+  from{
+    transform:translate(0,-100%);
+  }
+  to{
+    transform:translate(0,0);
+  }
+}

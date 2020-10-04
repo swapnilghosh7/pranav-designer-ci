@@ -1,3 +1,9 @@
+.iMPranavContainerWrapper{
+    transform:translate(0,-100%);
+    animation-name: headerAnim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 .iMPranavWrapper{
     display: flex;
     padding: 30px 0;
@@ -63,5 +69,9 @@
     }
     .iMPranavWrapper {
         flex-direction: column;
+    }
+    .imPranavHeading{
+        font-size: 36px;
+        margin-top: 20px;
     }
   }
