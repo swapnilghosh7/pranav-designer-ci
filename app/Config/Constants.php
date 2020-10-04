@@ -1,4 +1,25 @@
 <?php
+//--------------------------------------------------------------------
+// Define Environemt
+//--------------------------------------------------------------------
+// This defines the default Namespace that is used throughout
+// CodeIgniter to refer to the Application directory. Change
+// this constant to change the namespace that all application
+// classes should use.
+//
+// NOTE: changing this will require manually modifying the
+// existing namespaces of App\* namespaced-classes.
+//
+if($_SERVER['SERVER_NAME'] == 'pranavdesigner.com')
+{
+    defined('EN') || define('EN', 'production');
+}
+else if($_SERVER['SERVER_NAME'] == 'staging.pranavdesigner.com'){
+    defined('EN') || define('EN', 'staging');
+}
+else{
+    defined('EN') || define('EN', 'developement');
+}
 
 //--------------------------------------------------------------------
 // App Namespace
@@ -76,5 +97,16 @@ defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST']  : 'http://'.$_SERVER['HTTP_HOST'] . '/pranav-designer-ci';
+if(EN == 'production')
+{
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'] : 'http://'.$_SERVER['HTTP_HOST'] ;
     defined('BASE') || define('BASE',$protocol);
+}
+if(EN == 'staging'){
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'] : 'http://'.$_SERVER['HTTP_HOST'];
+    defined('BASE') || define('BASE',$protocol);
+}
+if(EN == 'developement'){
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://'.$_SERVER['HTTP_HOST'] . '/pranav-designer-ci' : 'http://'.$_SERVER['HTTP_HOST'] . '/pranav-designer-ci';
+    defined('BASE') || define('BASE',$protocol);
+}
