@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+  font-family: MontSerrat, sans-serif;
+}
+
+/* .headerWrapper{
+    padding: 0 4rem;
+    max-width: 1800px;
+} */
+.container{
+    padding: 0 4rem;
+    max-width: 1800px;
+}
+
+/* Header Styling */
+.headerWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px 0;
+}
+.mainNavbar{
+  list-style-type: none;
+  display: flex;
+}
+h1.headerText{
+  font-size: 2.1em;
+  font-weight: 600;
+}
+.navWrapper{
+  display: flex;
+  /* align-items: center; */
+}
+.navbar{
+  padding: 0px;
+}
+.hamburgerWrapper{
+  font-size: 20px;
+  padding: 15px 30px;
+}
+.mainNavbarItem{
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+}
+.mainNavbarItem:hover{
+ color:#0025a6;
+ border-bottom: 2px solid #0025a6;
+}
+.hamburgerWrapper{
+  cursor: pointer;
+}
+.hamburgerWrapper:hover{
+  color:#0025a6;
+  cursor: pointer;
+}
+
+
+/* ------Footer Css Start------- */
+footer{
+  background: #000;
+  padding: 35px 0;
+  color: #fff;
+}
+.footerWrapper{
+  text-align: center;
+}
+.followMeText{
+  font-size: 32px;
+  letter-spacing: 4px;
+
+}
+.socialMediaIconWrapper{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.socialMediaIcon{
+  margin: 20px;
+}
+.copyright{
+  margin-top: 30px;
+  font-weight: 200;
+}
+/* ------Footer End------- */
+
+@media (max-width: 992px){
+  .mainNavbar{
+      display: none;
+  }
+}
+
+/* Header Styling End */
