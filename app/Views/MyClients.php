@@ -19,11 +19,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 35px 0;
+    margin: 35px auto;
+    max-width: 1300px;
 }
 .myClientIconWrap{
     margin: 20px 0;
     min-width: 300px;
+    text-align:center;
+}
+.myClientIconWrap img{
+    max-width: 100%;
 }
 .myClientHeading{
     font-size: 32px;
@@ -39,6 +44,14 @@
     left: 0;
     z-index: -1;
     transform: translate(0, -50%);
+}
+@media(max-width:600px){
+    .myClientIconWrap{
+        width:100%;
+        max-width:100%;
+        min-width: auto;
+        text-align:center;
+    }
 }
 </style>
 

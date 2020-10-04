@@ -95,6 +95,9 @@ footer{
   .mainNavbar{
       display: none;
   }
+  .container{
+    padding: 0 1rem;
+  }
 }
 
 /* Header Styling End */

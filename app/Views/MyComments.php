@@ -47,6 +47,7 @@
 .userProfileImage{
     height: 65px;
     width: 65px;
+    min-width: 65px;
     margin-right: 20px;
     border-radius: 50%;
     border: 2px solid #0025a6;
